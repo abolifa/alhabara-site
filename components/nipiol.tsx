@@ -37,7 +37,7 @@ export default function ProductNipiol() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.6, ease: "easeOut", delay: 0.9 }}
         viewport={{ once: true }}
-        className="absolute bottom-[15vh] lg:bottom-[22vh] right-[40vw] w-[200px] z-40"
+        className="absolute bottom-[15vh] lg:bottom-[22vh] right-[50vw] w-[200px] z-40"
       />
 
       <div className="relative z-10 w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between px-10">
@@ -48,7 +48,7 @@ export default function ProductNipiol() {
           viewport={{ once: true }}
           className="lg:w-[45%] w-full text-center lg:text-left text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]"
         >
-          <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight">
+          <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight leading-relaxed">
             {t("nipiol.title")}
           </h1>
 

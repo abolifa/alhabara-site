@@ -17,7 +17,7 @@ export default function ContactAlhabara() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    formData.append("to", "info@watanalmajd.com.ly");
+    formData.append("to", "info@alhabara.com.ly");
 
     try {
       const response = await fetch("https://relay.eratech.com.ly/send", {

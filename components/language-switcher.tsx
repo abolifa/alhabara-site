@@ -15,15 +15,17 @@ export function LanguageToggle() {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    const savedLang = localStorage.getItem("i18nextLng") || "en";
+    const savedLang = localStorage.getItem("lang") || "ar";
     i18n.changeLanguage(savedLang);
     document.dir = savedLang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = savedLang;
   }, [i18n]);
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     document.dir = lang === "ar" ? "rtl" : "ltr";
-    localStorage.setItem("i18nextLng", lang);
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
   };
 
   return (
