@@ -28,13 +28,13 @@ export default function ContactAlhabara() {
       const text = await response.text();
 
       if (text.includes("OK")) {
-        setStatus("✔ تم الإرسال بنجاح");
+        setStatus("sent");
         form.reset();
       } else {
-        setStatus("⚠ حدث خطأ أثناء الإرسال");
+        setStatus("an error occurred");
       }
     } catch {
-      setStatus("⚠ فشل الاتصال بالخادم");
+      setStatus("failed to connect to server");
     }
   };
 
@@ -66,7 +66,6 @@ export default function ContactAlhabara() {
         viewport={{ once: true }}
         className="relative w-full max-w-7xl grid lg:grid-cols-2 gap-10 px-10 py-10"
       >
-        {/* LEFT = MAIN FORM CARD */}
         <div className="rounded-3xl h-full min-h-[620px] backdrop-blur-xl bg-white/20 border border-white/30 shadow-[0_0_45px_rgba(0,0,0,0.06)] p-12 flex flex-col justify-between">
           <div>
             <h2 className="text-5xl font-bold text-[#8d1536] tracking-tight">
@@ -78,29 +77,37 @@ export default function ContactAlhabara() {
             </p>
           </div>
 
-          <form action="#" onSubmit={handleSubmit} className="mt-10 space-y-6">
+          <form onSubmit={handleSubmit} className="mt-10 space-y-6">
             <input
               type="text"
+              name="name"
               placeholder={t("contact.fullname")}
               className="w-full bg-white/70 rounded-xl px-5 py-3 text-gray-800 shadow-sm outline-none"
+              required
             />
 
             <input
               type="email"
+              name="email"
               placeholder={t("contact.email")}
               className="w-full bg-white/70 rounded-xl px-5 py-3 text-gray-800 shadow-sm outline-none"
+              required
             />
 
             <input
               type="text"
+              name="phone"
               placeholder={t("contact.phone")}
               className="w-full bg-white/70 rounded-xl px-5 py-3 text-gray-800 shadow-sm outline-none"
+              required
             />
 
             <textarea
+              name="message"
               placeholder={t("contact.message")}
               rows={4}
               className="w-full bg-white/70 rounded-xl px-5 py-3 text-gray-800 shadow-sm outline-none"
+              required
             />
 
             <button
@@ -109,10 +116,13 @@ export default function ContactAlhabara() {
             >
               {t("contact.send")}
             </button>
+
+            {status && (
+              <p className="text-center text-sm text-gray-700 pt-2">{status}</p>
+            )}
           </form>
         </div>
 
-        {/* RIGHT = CONTACT CARD + MAP STACKED CLEANLY */}
         <div className="flex flex-col gap-5 h-full min-h-[620px]">
           <div className="rounded-3xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-100 p-8 flex flex-col justify-center gap-4">
             <h3 className="text-3xl font-bold text-[#8d1536] mb-1">
