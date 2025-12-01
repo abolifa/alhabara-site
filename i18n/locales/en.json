@@ -1,0 +1,86 @@
+{
+  "app": {
+    "brand": "Alhabara Co. for Baby Products"
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "logo_alt": "Alhabara Logo",
+    "title": "Alhabara Company",
+    "subtitle": "Importing Mother & Baby Supplies",
+    "description": "We care for the mother and protect the smile of the little one — premium products carefully selected for safety, comfort, and trust.",
+    "cta": "Explore Products"
+  },
+
+  "about": {
+    "heading": "For a Mother’s Comfort and Her Baby’s Smile",
+    "description": "At Alhabara, we pursue excellence without compromise. Our products are chosen with care, made from gentle materials suitable for delicate baby skin — giving mothers confidence and peace. Each item carries warmth, softness, and quality that can be felt and remembered.",
+    "badge": "Quality You Can Feel",
+    "image_alt": "Mother holding her baby"
+  },
+
+  "products": {
+    "title": "Our Products",
+    "slogan": "Discover premium products for both mother and baby — crafted and selected for safety, softness, comfort, and reliable quality."
+  },
+
+  "nipiol": {
+    "title": "Nipiol Baby Biscotti",
+    "description": "Biscotti made with 6 cereals — light, crumbly, soluble, easy to digest and perfect for early feeding stages.",
+    "details": "Suitable from 6+ months • Fresh-seal packs • Made in Italy",
+    "biscuit_alt": "Nipiol Biscotti Product Box",
+    "cloud_alt": "Soft cloud background",
+    "milk_wave_alt": "Milk splash base layer",
+    "whale_alt": "Blue whale illustration",
+    "boat_alt": "Baby boat icon"
+  },
+
+  "montefiore": {
+    "title": "Montefiore Infant Biscuit",
+    "description": "Soft biscuits that dissolve easily in warm milk — designed for small infants and early feeding development.",
+    "details": "From 4+ months • 8 mini packs • Easy to dissolve in milk",
+    "alt": "Montefiore Biscuit Product Box",
+    "cloud_alt": "Soft cloud background",
+    "wheat_alt": "Wheat illustration",
+    "milk_alt": "Milk splash wave graphic"
+  },
+  "goon": {
+    "title": "GOO.N Premium Baby Diapers",
+    "description": "Ultra-soft Japanese diapers designed for sensitive skin — breathable, gentle, and comfortably elastic for all-day movement.",
+    "details": "Tape Type • Unisex M Size • 6–11kg • 52 Sheets",
+    "alt_box": "GOO.N Premium Diapers Package",
+    "cloud_alt": "Soft pink cloud mist",
+    "cushion_alt": "Air cushion layer texture"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "For partnerships, wholesale requests or product supply — message our team directly.",
+    "fullname": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Write your message...",
+    "send": "Send Message",
+    "card_title": "Alhabara HQ",
+    "card_address": "Food Commodities Center, Misurata - Libya",
+    "card_email": "info@alhabara.com.ly",
+    "card_phone": "+218 91 213 1319",
+    "card_whatsapp": "+218 91 353 5003"
+  },
+  "footer": {
+    "logo_alt": "Alhabara Logo",
+    "brand_desc": "Premium mother & baby essentials focused on comfort, purity and gentle care.",
+
+    "explore_title": "Explore",
+    "contact_title": "Contact",
+    "address": "Food Commodities Center, Misurata - Libya",
+    "email": "info@alhabara.com.ly",
+    "phone": "+218 91 213 1319",
+    "copyright": "© 2025 ALHABARA — ALL RIGHTS RESERVED"
+  }
+}
